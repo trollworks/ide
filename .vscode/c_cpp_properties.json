@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "name": "Default",
+      "includePath": [
+        "${workspaceFolder}/sources/editor/include",
+        "${workspaceFolder}/sources/runtime/include",
+        "${workspaceFolder}/vendor/utils/fmt/fmt-10.1.1/include",
+        "${workspaceFolder}/vendor/utils/nlohmann-json/include",
+        "${workspaceFolder}/vendor/utils/crossguid/crossguid-0.2.3/include",
+        "${workspaceFolder}/vendor/utils/efsw/efsw-1.0.2/include",
+        "${workspaceFolder}/vendor/graphics/SDL2/SDL2-2.28.4/include",
+        "${workspaceFolder}/vendor/graphics/SDL2_image/SDL2_image-2.7.0/include",
+        "${workspaceFolder}/vendor/graphics/glad/include",
+        "${workspaceFolder}/vendor/graphics/glm/glm-0.9.9.9",
+        "${workspaceFolder}/vendor/ui/argparse/include",
+        "${workspaceFolder}/vendor/ui/imgui/include",
+        "${workspaceFolder}/vendor/ui/nativefiledialog/include",
+        "${workspaceFolder}/vendor/scripts/lua/lua-5.4.6/include",
+        "${workspaceFolder}/vendor/ecs/entt/include"
+      ],
+      "defines": [
+        "DEBUG",
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE",
+        "_USE_MATH_DEFINES"
+      ],
+      "cppStandard": "c++23"
+    }
+  ],
+  "version": 4
+}

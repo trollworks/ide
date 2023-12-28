@@ -1,0 +1,5 @@
+add_subdirectory(utils)
+add_subdirectory(graphics)
+add_subdirectory(ui)
+add_subdirectory(scripts)
+add_subdirectory(ecs)
