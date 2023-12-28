@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(glad C)
+
+file(GLOB_RECURSE GLAD_SOURCES
+  ${PROJECT_SOURCE_DIR}/src/*.c
+)
+
+file(GLOB_RECURSE GLAD_HEADERS
+  ${PROJECT_SOURCE_DIR}/include/*.h
+)
+
+add_library(glad STATIC ${GLAD_HEADERS} ${GLAD_SOURCES})
+
+target_include_directories(glad PUBLIC
+  $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDDIR}>
+)
+
+install(
+  TARGETS ${PROJECT_NAME}
+  LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}"
+)
+
+install(
+  DIRECTORY "${PROJECT_SOURCE_DIR}/include/"
+  DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
+)
